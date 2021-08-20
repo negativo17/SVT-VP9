@@ -3,7 +3,7 @@
 
 Name:           svt-vp9
 Version:        0.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Scalable Video Technology for VP9 Encoder
 License:        BSD-2-Clause-Patent
 URL:            https://github.com/OpenVisualCloud/%{real_name}
@@ -95,5 +95,8 @@ popd
 %{_libdir}/gstreamer-1.0/libgstsvtvp9enc.so
 
 %changelog
+* Fri Aug 20 2021 Simone Caronni <negativo17@gmail.com> - 0.3.0-2
+- Bump version to replace the EPEL package.
+
 * Thu Nov 26 2020 Simone Caronni <negativo17@gmail.com> - 0.3.0-1
 - First build, make it build also on CentOS/RHEL 7 with rebased GStreamer.
